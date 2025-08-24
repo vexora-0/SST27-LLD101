@@ -1,5 +1,9 @@
 public class Demo02 {
     public static void main(String[] args) {
-        new Player().play(new byte[]{1,2,3,4});
+        IDecoder decoder = new Decode();
+        IDraw drawer = new Draw();
+        ICache cache = new Cache();
+        Player player = new Player(decoder, drawer, cache);
+        player.play(new byte[]{1,2,3,4});
     }
 }
