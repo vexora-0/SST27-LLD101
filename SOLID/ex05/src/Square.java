@@ -1,5 +1,15 @@
+public class Square implements Igeo {
+    int side;
+    public void setWidth(int w) {
+        this.side = w;
+    }
 
-public class Square extends Rectangle {
-    @Override void setWidth(int w){ this.w = this.h = w; }
-    @Override void setHeight(int h){ this.w = this.h = h; }
+    public void setHeight(int h) {
+        this.side = h;
+
+    }
+
+    public int area() {
+        return side * side;
+    }
 }
