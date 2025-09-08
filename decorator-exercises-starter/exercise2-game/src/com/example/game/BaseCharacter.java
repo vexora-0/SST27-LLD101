@@ -13,7 +13,6 @@ public class BaseCharacter implements Character {
     public void move() {
         System.out.println("Moving at speed " + speed + " with sprite " + sprite);
     }
-
     @Override
     public void attack() {
         System.out.println("Attacking with damage " + damage + " using sprite " + sprite);

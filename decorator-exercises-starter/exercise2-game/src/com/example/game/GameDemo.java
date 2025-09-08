@@ -35,5 +35,19 @@ public class GameDemo {
         // Character withoutAura = buffed; // removal by recomposition
         // withoutAura.move();
         // withoutAura.attack();
+        System.out.println("\n--- Buffed ---");
+        Character buffed = new DamageBoost(new SpeedBoost(base, 3), 15);
+        buffed.move();
+        buffed.attack();
+
+        System.out.println("\n--- Golden ---");
+        Character shiny = new GoldenAura(buffed);
+        shiny.move();
+        shiny.attack();
+
+        System.out.println("\n--- No Aura ---");
+        Character withoutAura = buffed;
+        withoutAura.move();
+        withoutAura.attack();
     }
 }
