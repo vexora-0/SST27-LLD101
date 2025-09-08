@@ -1,10 +1,13 @@
 package beverages_decorator;
 
-public class Latte extends Beverage {
+public class Latte extends BeverageDecorator {
+
+	public Latte(Beverage b) {
+		super(b);
+	}
 
 	@Override
 	public int cost() {
-		return 20;
+		return b.cost() + 5;
 	}
-
 }
